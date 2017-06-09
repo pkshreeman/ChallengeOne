@@ -21,7 +21,7 @@ video{
 /*https://codepen.io/icutpeople/pen/whueK */
 .overlay-desc {
   position: absolute;
-  top: 400px; bottom:0; left:0; right:0;
+  top: 0px; bottom:0; left:0; right:0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,12 +98,76 @@ p {
 
 
 .fourth-section {
-    background-color: white;
+    background-color: #dbdbdb;
     height: 600px;
 }
 
+.fourth-section img {
+
+  width: 100%;
+}
 
 footer {
   height: 200px;
-  background-color: #dbdbdb;
+  position: relative;
+  text-align: center;
+  margin: auto;
+}
+
+footer img {
+  height:100%;
+  width: 100%;
+  z-index: -1000;
+
+}
+
+.transist img {
+  /* https://codepen.io/afinedayproductions/pen/EzvLp */
+  transition: all 5s;
+}
+
+.transist img:hover {
+  transform: scale(1.2);
+  -moz-transform: scale(1.2);
+ -webkit-transform: scale(1.2);
+}
+
+.exact {
+  width:100%;
+  overflow:hidden;
+}
+
+.selector img {
+  width:30px;
+  height:30px;
+  radius: 100px;
+  border: 2px solid white;
+  outline: 1px solid black;
+
+}
+
+.selector img:hover {
+  border: 0px solid blue;
+}
+
+.overlayy{
+  position: absolute;
+  z-index: 0;
+  top:0;
+  left: 0;
+  right: 0;
+}
+
+.overlayy a {
+  color: white;
+  font-weight: bold;
+}
+
+.overlayy a:hover {
+  text-decoration: none;
+}
+
+.poster-img {
+  height: 100%;
+  weight: 100%;
 }
